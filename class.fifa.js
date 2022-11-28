@@ -29,6 +29,8 @@ class Fifa {
 	    if (this.readyState == 4 && this.status == 200) console.log(xhr.responseText)
 		}
 		xhr.open("GET", l, true)
+		xhr.withCredentials = true
+		xhr.setRequestHeader("Content-Type", "application/json")
 		return xhr.send()
 	}
 }
