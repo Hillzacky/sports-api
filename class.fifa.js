@@ -1,7 +1,7 @@
 'use-strict'
 class Fifa {
 	static host	= `api.fifa.com`
-	static ep		= `https://${Fifa.host}/api/v3`
+	static ep	= `https://${Fifa.host}/api/v3`
 
 	static seasons(){
 		return Fifa.req(`${Fifa.ep}/seasons?language=en`)
